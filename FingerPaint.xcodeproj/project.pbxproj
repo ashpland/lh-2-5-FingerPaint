@@ -13,6 +13,9 @@
 		4942A8D21F93E5E700886F0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4942A8D11F93E5E700886F0E /* Assets.xcassets */; };
 		4942A8D51F93E5E700886F0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4942A8D31F93E5E700886F0E /* LaunchScreen.storyboard */; };
 		4942A8D81F93E5E700886F0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4942A8D71F93E5E700886F0E /* main.m */; };
+		4942A8E01F93E6E000886F0E /* PaintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4942A8DF1F93E6E000886F0E /* PaintViewController.m */; };
+		4942A8E31F93E73700886F0E /* LineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4942A8E21F93E73700886F0E /* LineModel.m */; };
+		4942A8E61F93E74000886F0E /* LineSegmentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4942A8E51F93E74000886F0E /* LineSegmentModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		4942A8D41F93E5E700886F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4942A8D61F93E5E700886F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4942A8D71F93E5E700886F0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4942A8DE1F93E6E000886F0E /* PaintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaintViewController.h; sourceTree = "<group>"; };
+		4942A8DF1F93E6E000886F0E /* PaintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintViewController.m; sourceTree = "<group>"; };
+		4942A8E11F93E73700886F0E /* LineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineModel.h; sourceTree = "<group>"; };
+		4942A8E21F93E73700886F0E /* LineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineModel.m; sourceTree = "<group>"; };
+		4942A8E41F93E74000886F0E /* LineSegmentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineSegmentModel.h; sourceTree = "<group>"; };
+		4942A8E51F93E74000886F0E /* LineSegmentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineSegmentModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,12 @@
 				4942A8CB1F93E5E700886F0E /* ViewController.h */,
 				4942A8CC1F93E5E700886F0E /* ViewController.m */,
 				4942A8CE1F93E5E700886F0E /* Main.storyboard */,
+				4942A8E11F93E73700886F0E /* LineModel.h */,
+				4942A8E21F93E73700886F0E /* LineModel.m */,
+				4942A8E41F93E74000886F0E /* LineSegmentModel.h */,
+				4942A8E51F93E74000886F0E /* LineSegmentModel.m */,
+				4942A8DE1F93E6E000886F0E /* PaintViewController.h */,
+				4942A8DF1F93E6E000886F0E /* PaintViewController.m */,
 				4942A8D11F93E5E700886F0E /* Assets.xcassets */,
 				4942A8D31F93E5E700886F0E /* LaunchScreen.storyboard */,
 				4942A8D61F93E5E700886F0E /* Info.plist */,
@@ -142,9 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4942A8E31F93E73700886F0E /* LineModel.m in Sources */,
 				4942A8CD1F93E5E700886F0E /* ViewController.m in Sources */,
 				4942A8D81F93E5E700886F0E /* main.m in Sources */,
 				4942A8CA1F93E5E700886F0E /* AppDelegate.m in Sources */,
+				4942A8E01F93E6E000886F0E /* PaintViewController.m in Sources */,
+				4942A8E61F93E74000886F0E /* LineSegmentModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
