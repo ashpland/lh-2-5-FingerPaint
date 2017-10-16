@@ -7,9 +7,18 @@
 //
 
 #import "ViewController.h"
-#import "LineModel.h"
+#import "PaintView.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) PaintView *paintView;
+@property (strong, nonatomic) UIButton *currentColorButton;
+@property (weak, nonatomic) IBOutlet UIButton *buttonForNewScreen;
+- (IBAction)colorButton:(UIButton *)sender;
+- (IBAction)clearScreenButton:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *redButton;
+
+
+
 
 @end
 
@@ -17,18 +26,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+//    [self setupUI];
+
+    self.buttonForNewScreen.titleLabel.adjustsFontSizeToFitWidth = YES;
+    self.buttonForNewScreen.titleLabel.minimumScaleFactor = 0.5;
     
+    self.paintView = self.view.subviews[0];
     
-    //LineModel *theLine = [LineModel new];
-    
+    self.currentColorButton = self.redButton;
+
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (IBAction)colorButton:(UIButton *)sender {
+    [self.currentColorButton setTitle:@"" forState:UIControlStateNormal];
+    self.paintView.currentColor = sender.backgroundColor;
+    self.currentColorButton = sender;
+    [self.currentColorButton setTitle:@"✔️" forState:UIControlStateNormal];
 }
 
-
+- (IBAction)clearScreenButton:(UIButton *)sender {
+    [self.paintView clearCanvas];
+}
 @end

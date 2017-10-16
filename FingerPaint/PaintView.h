@@ -1,5 +1,5 @@
 //
-//  PaintViewController.h
+//  PaintView.h
 //  FingerPaint
 //
 //  Created by Andrew on 2017-10-15.
@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PaintViewController : UIViewController
+@interface PaintView : UIView
+
+@property (nonatomic, strong) UIColor *currentColor;
+
+-(void)clearCanvas;
 
 @end

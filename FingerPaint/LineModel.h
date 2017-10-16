@@ -17,4 +17,7 @@
 
 -(void)addToLineFrom:(CGPoint)firstPoint to:(CGPoint)secondPoint;
 
+- (instancetype)initWithColor:(UIColor *)color;
+
+
 @end
